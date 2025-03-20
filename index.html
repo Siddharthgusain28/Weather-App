@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather|Weather API</title>
+    <meta name="description" content="Weather API for Weather condition & Other information">
+    <link rel="icon" href="./img/partlyCloud.jpg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="prefetch" href="http://api.weatherapi.com/v1/current.json?key=d28033b1c9ad443b8ec175055251602&q=${loc}&aqi=yes">
+</head>
+<body>
+    <div class="weather-container">
+        <section class="part-1">
+            <div class="container">
+                <div class="weather">
+                    <header>
+                        <div class="row">
+                            <div class="col-4 col-m-12">
+                                <h1>Weather</h1>
+                            </div>
+                            <div class="col-8 col-m-12">
+                                <form class="getWeather ">
+                                    <label><input type="search" name="loc" required autofocus placeholder="Enter Location"></label>
+                                    <button class="btn">🔍</button>
+                                </form>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="row">
+                        <div class="col-8 col-p-12">
+                            <div class="row">
+                                <div class="col-6 col-p-6">
+                                    <p class="location"><strong>📍</strong></p>
+                                </div>
+                                <div class="col-6 col-p-6">
+                                    <p class="about"><strong>About</strong></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="temp weatherDetails">
+                                        <h3>11*c</h3>
+                                        <p><strong>Feels like:-11*c</strong></p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="pressure weatherDetails">
+                                        <h3>Pressure</h3>
+                                        <p><strong>11</strong></p>
+                                    </div>                                    
+                                </div>
+                                <div class="col-4">
+                                    <div class="uvIndex weatherDetails">
+                                        <h3>UV Index</h3>
+                                        <p><strong>11</strong></p>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-m-12">
+                                    <div class="condition weatherDetail">
+                                        <h3>Condition</h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col1 col-p-3"></div>
+                        <div class="col-4 col-p-6 col-m-12">
+                            <div class="weatherWise">
+                                <h2> WeatherWise</h2>
+                                <div class="wind">
+                                    <h3>Wind</h3>
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                  
+                                    <!-- <input type="range" min="0" max="100" value="11" class="windInput"> -->
+                                    <p class="windValue">11 Km/h</p>
+                                </div>
+                                <div class="humidity">
+                                    <h3>Humidity</h3>
+                                    <div class="progress-bar2">
+                                        <div class="progress2"></div>
+                                    </div>
+                                    <!-- <input type="range" min="0" max="100" value="11" class="humInput" > -->
+                                    <p class="humValue">11</p>
+                                </div>
+                            </div>            
+                        </div>
+                        <div class="col-p-3"></div>
+                        
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-4 col-m-6">
+                            <div class="dewPoint weatherDetails">
+                                <h3>Dew Point</h3>
+                                <p><strong>11</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-m-6">
+                            <div class="precip weatherDetails">
+                                <h3>Precipitation</h3>
+                                <p><strong>11</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-m-12">
+                            <div class="aqi weatherDetail">
+                                <h3>AirQuality</h3>
+                                <table></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+        </section>
+       
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
