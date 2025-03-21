@@ -10,7 +10,7 @@ document.querySelector(".getWeather").addEventListener("submit",function(e){
         document.querySelector(".location").innerHTML="<p>🙅‍♂️Location not found</p>"
       }  
       else{
-        console.log(i)
+        // console.log(i)
         document.querySelector(".location").innerHTML=
         `<p><strong>📍 :- ${i.location.name}, ${i.location.region}, ${i.location.country}</strong></p>`}
         document.querySelector(".about").innerHTML=`<p><strong>Lat & Long :- ${i.location.lat} & ${i.location.lon}</strong></p>`;

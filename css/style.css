@@ -14,8 +14,8 @@ body{font-size: 16px; font-family: system-ui, -apple-system, BlinkMacSystemFont,
 .weather-container{background: url(../img/af6073d2-cbb2-4e28-b642-3327d14808b2.avif) no-repeat center top/cover;}
 .weather h1{ font-size:3rem; padding: 0 15px;}
 form{margin:0 5px 0 15px;}
-input{width: 20rem; height: 3rem; border:none;border-radius: 50px; font-size: 18px; padding: 10px 5px; text-align: center;}
-.btn{ width: 4rem; height: 3rem; font-size: 20px; background: #d4f307; border: none; border-radius:50px;}
+input{width: 19rem; height: 3rem; border:none;border-radius: 50px; font-size: 18px; padding: 10px 15px;}
+.btn{ width: 3.5rem; height: 3rem; font-size: 20px; background: #d4f307; border: none; border-radius:50px;}
 .btn:hover{background: #d4f30785 ;}
 input::placeholder{font-size: 20px; padding: 10px 5px;}
 input:focus{outline: none;}
