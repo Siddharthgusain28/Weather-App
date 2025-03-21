@@ -10,7 +10,7 @@ document.querySelector(".getWeather").addEventListener("submit",function(e){
         document.querySelector(".location").innerHTML="<p>🙅‍♂️Location not found</p>"
       }  
       else{
-        // console.log(i)
+        console.log(i)
         document.querySelector(".location").innerHTML=
         `<p><strong>📍 :- ${i.location.name}, ${i.location.region}, ${i.location.country}</strong></p>`}
         document.querySelector(".about").innerHTML=`<p><strong>Lat & Long :- ${i.location.lat} & ${i.location.lon}</strong></p>`;
@@ -40,7 +40,7 @@ document.querySelector(".getWeather").addEventListener("submit",function(e){
         else if(i.current.condition.text=="Clear"){
             document.querySelector(".condition").style.background='url(./img/clear.avif) no-repeat center '
         }
-        else if(i.current.condition.text=="Partly Cloudy"){
+        else if(i.current.condition.text=="Partly cloudy"){
             document.querySelector(".condition").style.background='url(./img/partlyCloud.jpg) no-repeat center top/cover'
         }
         else if(i.current.condition.text=="Light rain"){
